@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiet sign-in</title>
+  <style>
+    :root { --bg: #ffffff; --fg: #111111; --muted: #777777; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #000000; --fg: #eeeeee; --muted: #888888; } }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); color: var(--fg);
+           font: 17px/1.5 -apple-system, system-ui, sans-serif; text-align: center; padding: 0 16px; }
+    a { color: var(--fg); }
+    p { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 style="font-weight:300;font-family:ui-serif,Georgia,serif">Quiet</h1>
+    <p>Returning to the app…</p>
+    <p><a id="back" href="quietpost://auth">Tap here if nothing happens</a></p>
+  </main>
+  <script>
+    // TikTok sends you here with ?code=...&state=... ; pass it straight back to the app.
+    var target = "quietpost://auth" + window.location.search;
+    document.getElementById("back").href = target;
+    window.location.replace(target);
+  </script>
+</body>
+</html>
