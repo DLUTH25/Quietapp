@@ -209,7 +209,7 @@ enum TikTokAPI {
         case "spam_risk_user_banned_from_posting":
             return "TikTok isn't allowing this account to post right now."
         case "unaudited_client_can_only_post_to_private_accounts":
-            return "Until TikTok approves your developer app, posts must be set to \"Only me\", or the account must be private. Choose \"Only me\", or use Drafts."
+            return "Until TikTok approves your developer app, your TikTok account must be set to Private to post directly. Switch it to Private in the TikTok app, or use Drafts."
         case "reached_active_user_cap":
             return "Your TikTok developer app reached its daily user limit."
         default:

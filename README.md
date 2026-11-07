@@ -40,9 +40,9 @@ TikTok only lets apps post if they're registered, so you make your own (free) de
 
 ### Important: "Only me" until TikTok approves your app
 
-TikTok restricts new, unaudited developer apps: **Direct Post only works with "Only me" visibility** (or with a private account) until you submit the app for TikTok's audit and it's approved.
+TikTok restricts new, unaudited developer apps (including Sandbox): **Direct Post only works if your TikTok account is set to Private** (TikTok app → Profile → ☰ → Settings and privacy → Privacy → Private account). Choosing "Only me" isn't enough on its own. This lasts until you submit the app for TikTok's audit and it's approved.
 Until then you can:
-- post as **Only me** and switch it to public later inside TikTok, or
+- switch your account to Private while testing, then switch it back, or
 - use **Drafts**: the video goes to your TikTok inbox, and you publish it from there.
 
 Other TikTok limits: about 15 posts per day per account, and videos must fit the account's maximum length. Quiet checks the length before uploading.
