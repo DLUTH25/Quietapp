@@ -108,7 +108,7 @@ struct ComposeView: View {
                 .buttonStyle(.borderedProminent)
                 .tint(.primary)
                 .foregroundStyle(Color(uiColor: .systemBackground))
-                .disabled(blockingProblem != nil)
+                .disabled(video == nil || blockingProblem != nil)
 
                 if destination == .post {
                     legalNote
